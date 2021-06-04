@@ -1,7 +1,5 @@
 import { Application, Router } from "https://deno.land/x/oak/mod.ts";
 import { oakCors } from "https://deno.land/x/cors/mod.ts";
-import { exec } from "https://deno.land/x/exec/mod.ts";
-
 const app = new Application();
 const port = 8000;
 
@@ -13,6 +11,9 @@ app.use(
 );
 
 const router = new Router();
+const encoder = new TextEncoder();
+const decoder = new TextDecoder();
+let p;
 
 var serverStatus = { status: false };
 
@@ -21,25 +22,43 @@ router
     ctx.response.body = serverStatus;
   })
   .get("/server/start", (ctx) => {
-    serverStatus.status = true;
     initialServer();
     ctx.response.body = serverStatus;
   })
   .get("/server/stop", (ctx) => {
-    serverStatus.status = false;
     initialServer();
     ctx.response.body = serverStatus;
   });
+//   .post("/server/command", async (ctx) => {
+//     if (p !== null) {
+//       const values = await ctx.request.body().value;
+//       console.log(values.command);
+//       if (values.command.charAt(0) !== "/") {
+//         values.command = "/" + values.command;
+//       }
+//       await p.stdin.write(encoder.encode(values.command));
+//       //   await p.stdin.close();
+//       await p.stdin.next();
+//     }
+//   });
 
 async function initialServer() {
-  if (serverStatus.status) {
-    Deno.run({
+  if (!serverStatus.status) {
+    p = Deno.run({
       cmd: ["java", "-Xmx1024M", "-Xms1024M", "-jar", "server.jar", "nogui"],
+      stdout: "piped",
+      stdin: "piped",
+      stderr: "piped",
     });
-    // exec("java -Xmx1024M -Xms1024M -jar server.jar nogui");
+    // console.log(decoder.decode(p.output()));
+    serverStatus.status = true;
   } else {
-    console.log("test");
-    // exec("/time set day");
+    if (p !== null) {
+      await p.stdin.write(encoder.encode("/stop"));
+
+      await p.stdin.close();
+      serverStatus.status = false;
+    }
   }
 }
 
