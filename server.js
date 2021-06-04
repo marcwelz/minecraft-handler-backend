@@ -28,19 +28,18 @@ router
   .get("/server/stop", (ctx) => {
     initialServer();
     ctx.response.body = serverStatus;
+  })
+  .post("/server/command", async (ctx) => {
+    if (p !== null) {
+      const values = await ctx.request.body().value;
+      console.log(values.command);
+      if (values.command.charAt(0) !== "/") {
+        values.command = "/" + values.command;
+      }
+      await p.stdin.write(encoder.encode(values.command + "\n"));
+      //   await p.stdin.close();
+    }
   });
-//   .post("/server/command", async (ctx) => {
-//     if (p !== null) {
-//       const values = await ctx.request.body().value;
-//       console.log(values.command);
-//       if (values.command.charAt(0) !== "/") {
-//         values.command = "/" + values.command;
-//       }
-//       await p.stdin.write(encoder.encode(values.command));
-//       //   await p.stdin.close();
-//       await p.stdin.next();
-//     }
-//   });
 
 async function initialServer() {
   if (!serverStatus.status) {

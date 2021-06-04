@@ -1,56 +1,63 @@
-[15:09:53] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[15:09:54] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[15:09:54] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[15:09:54] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[15:09:54] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[15:09:54] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[15:09:54] [main/INFO]: Reloading ResourceManager: Default
-[15:09:54] [Worker-Main-14/INFO]: Loaded 7 recipes
-[15:09:55] [Worker-Main-14/INFO]: Loaded 927 advancements
-[15:09:56] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[15:09:56] [Server thread/INFO]: Loading properties
-[15:09:56] [Server thread/INFO]: Default game type: SURVIVAL
-[15:09:56] [Server thread/INFO]: Generating keypair
-[15:09:57] [Server thread/INFO]: Starting Minecraft server on *:25565
-[15:09:57] [Server thread/INFO]: Using default channel type
-[15:09:57] [Server thread/INFO]: Preparing level "world"
-[15:09:57] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[15:09:58] [Server thread/INFO]: Preparing spawn area: 0%
-[15:09:58] [Server thread/INFO]: Preparing spawn area: 0%
-[15:09:58] [Server thread/INFO]: Preparing spawn area: 0%
-[15:09:59] [Server thread/INFO]: Preparing spawn area: 0%
-[15:10:01] [User Authenticator #1/INFO]: UUID of player Milchmaa is f975ebc2-b0b2-42c8-876c-f544c626e87d
-[15:10:04] [Worker-Main-17/INFO]: Preparing spawn area: 83%
-[15:10:04] [Worker-Main-8/INFO]: Preparing spawn area: 83%
-[15:10:04] [Worker-Main-10/INFO]: Preparing spawn area: 83%
-[15:10:04] [Worker-Main-9/INFO]: Preparing spawn area: 83%
-[15:10:04] [Worker-Main-8/INFO]: Preparing spawn area: 83%
-[15:10:04] [Worker-Main-12/INFO]: Preparing spawn area: 83%
-[15:10:04] [Worker-Main-12/INFO]: Preparing spawn area: 83%
-[15:10:04] [Worker-Main-8/INFO]: Preparing spawn area: 83%
-[15:10:04] [Worker-Main-12/INFO]: Preparing spawn area: 83%
-[15:10:04] [Worker-Main-9/INFO]: Preparing spawn area: 83%
-[15:10:04] [Worker-Main-8/INFO]: Preparing spawn area: 83%
-[15:10:04] [Worker-Main-10/INFO]: Preparing spawn area: 94%
-[15:10:05] [Worker-Main-10/INFO]: Preparing spawn area: 94%
-[15:10:05] [Worker-Main-12/INFO]: Preparing spawn area: 94%
-[15:10:06] [Worker-Main-13/INFO]: Preparing spawn area: 95%
-[15:10:06] [Server thread/INFO]: Preparing spawn area: 99%
-[15:10:09] [Server thread/INFO]: Time elapsed: 11632 ms
-[15:10:09] [Server thread/INFO]: Done (11.789s)! For help, type "help"
-[15:10:09] [Server thread/INFO]: Milchmaa[/192.168.1.232:56280] logged in with entity id 226 at (-142.1377206127129, 76.116923045434, 248.13732639471124)
-[15:10:09] [Server thread/INFO]: Milchmaa joined the game
-[15:10:16] [Server thread/INFO]: [Milchmaa: Set the time to 1000]
-[15:10:21] [Server thread/INFO]: Stopping the server
-[15:10:21] [Server thread/INFO]: Stopping server
-[15:10:21] [Server thread/INFO]: Saving players
-[15:10:21] [Server thread/INFO]: Saving worlds
-[15:10:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[15:10:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[15:10:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[15:10:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[15:10:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[15:10:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[15:10:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[15:10:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[15:10:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:29:25] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15:29:26] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:29:26] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:29:26] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:29:26] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:29:26] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:29:26] [main/INFO]: Reloading ResourceManager: Default
+[15:29:26] [Worker-Main-13/INFO]: Loaded 7 recipes
+[15:29:27] [Worker-Main-13/INFO]: Loaded 927 advancements
+[15:29:29] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[15:29:29] [Server thread/INFO]: Loading properties
+[15:29:29] [Server thread/INFO]: Default game type: SURVIVAL
+[15:29:29] [Server thread/INFO]: Generating keypair
+[15:29:29] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:29:29] [Server thread/INFO]: Using default channel type
+[15:29:29] [Server thread/INFO]: Preparing level "world"
+[15:29:29] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:29:31] [Server thread/INFO]: Preparing spawn area: 0%
+[15:29:31] [Server thread/INFO]: Preparing spawn area: 0%
+[15:29:31] [Server thread/INFO]: Preparing spawn area: 0%
+[15:29:31] [Server thread/INFO]: Preparing spawn area: 0%
+[15:29:32] [Server thread/INFO]: Preparing spawn area: 3%
+[15:29:32] [Server thread/INFO]: Preparing spawn area: 3%
+[15:29:33] [User Authenticator #1/INFO]: UUID of player Milchmaa is f975ebc2-b0b2-42c8-876c-f544c626e87d
+[15:29:37] [Worker-Main-15/INFO]: Preparing spawn area: 83%
+[15:29:37] [Worker-Main-8/INFO]: Preparing spawn area: 83%
+[15:29:37] [Worker-Main-8/INFO]: Preparing spawn area: 83%
+[15:29:37] [Worker-Main-15/INFO]: Preparing spawn area: 83%
+[15:29:37] [Worker-Main-9/INFO]: Preparing spawn area: 83%
+[15:29:37] [Worker-Main-9/INFO]: Preparing spawn area: 83%
+[15:29:37] [Worker-Main-9/INFO]: Preparing spawn area: 83%
+[15:29:37] [Worker-Main-9/INFO]: Preparing spawn area: 83%
+[15:29:37] [Worker-Main-15/INFO]: Preparing spawn area: 83%
+[15:29:37] [Worker-Main-10/INFO]: Preparing spawn area: 83%
+[15:29:37] [Worker-Main-15/INFO]: Preparing spawn area: 94%
+[15:29:38] [Worker-Main-10/INFO]: Preparing spawn area: 94%
+[15:29:38] [Worker-Main-14/INFO]: Preparing spawn area: 95%
+[15:29:39] [Server thread/INFO]: Preparing spawn area: 99%
+[15:29:42] [Server thread/INFO]: Time elapsed: 12418 ms
+[15:29:42] [Server thread/INFO]: Done (12.545s)! For help, type "help"
+[15:29:42] [Server thread/INFO]: Milchmaa[/192.168.1.232:61076] logged in with entity id 228 at (-133.69492631567533, 76.116923045434, 250.55347545984776)
+[15:29:42] [Server thread/INFO]: Milchmaa joined the game
+[15:29:56] [Server thread/INFO]: Set the time to 13000
+[15:30:01] [Server thread/INFO]: Set the time to 1000
+[15:30:32] [Server thread/INFO]: Set Milchmaa's game mode to Survival Mode
+[15:30:43] [Server thread/INFO]: Set Milchmaa's game mode to Creative Mode
+[15:31:11] [Server thread/INFO]: Set the time to 13000
+[15:31:16] [Server thread/INFO]: Set the time to 1000
+[15:31:19] [Server thread/INFO]: Stopping the server
+[15:31:19] [Server thread/INFO]: Stopping server
+[15:31:19] [Server thread/INFO]: Saving players
+[15:31:19] [Server thread/INFO]: Milchmaa lost connection: Disconnected
+[15:31:19] [Server thread/INFO]: Milchmaa left the game
+[15:31:19] [Server thread/INFO]: Saving worlds
+[15:31:19] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15:31:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[15:31:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[15:31:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:31:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[15:31:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:31:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[15:31:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:31:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
