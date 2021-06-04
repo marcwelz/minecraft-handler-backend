@@ -6,14 +6,18 @@ const port = 8000;
 app.use(
   oakCors({
     origin: "http://192.168.1.232:8080",
-    ptionsSuccessStatus: 200,
+    optionsSuccessStatus: 200,
   })
 );
 
 const router = new Router();
 const encoder = new TextEncoder();
 const decoder = new TextDecoder();
-let p;
+
+const text = Deno.readTextFile("server.properties");
+text.then((response) => console.log(response));
+
+let p: any;
 
 var serverStatus = { status: false };
 
@@ -37,7 +41,6 @@ router
         values.command = "/" + values.command;
       }
       await p.stdin.write(encoder.encode(values.command + "\n"));
-      //   await p.stdin.close();
     }
   });
 
@@ -49,7 +52,7 @@ async function initialServer() {
       stdin: "piped",
       stderr: "piped",
     });
-    // console.log(decoder.decode(p.output()));
+    // console.log(decoder.decode(await p.output()));
     serverStatus.status = true;
   } else {
     if (p !== null) {
