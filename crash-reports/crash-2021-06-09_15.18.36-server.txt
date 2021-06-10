@@ -1,0 +1,36 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 6/9/21 3:18 PM
+Description: Exception in server tick loop
+
+java.net.UnknownHostException: hallobaum: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at java.net.InetAddress.getByName(InetAddress.java:1077)
+	at zg.d(SourceFile:137)
+	at net.minecraft.server.MinecraftServer.w(SourceFile:645)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:257)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Mac OS X (x86_64) version 10.16
+	Java Version: 1.8.0_282, AdoptOpenJDK
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), AdoptOpenJDK
+	Memory: 624495888 bytes (595 MB) / 1059061760 bytes (1010 MB) up to 1059061760 bytes (1010 MB)
+	CPUs: 8
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	Data Packs: vanilla
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)
